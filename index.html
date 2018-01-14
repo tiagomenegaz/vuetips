@@ -7,7 +7,7 @@
 <body>
   <div id="app">
     <button v-on:click="changeVisibility">Toggle Text</button>
-    <p>{{ message }}</p>
+    <p v-if="visibleText">{{ message }}</p>
   </div>
 
   <script>
