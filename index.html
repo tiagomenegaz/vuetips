@@ -8,6 +8,7 @@
   <div id="app">
     <button v-on:click="changeVisibility">Toggle Text</button>
     <p v-if="visibleText">{{ message }}</p>
+    <input v-model="message">
   </div>
 
   <script>
