@@ -36,6 +36,9 @@
         changeVisibility() {
           this.visibleText = !this.visibleText;
         },
+        addItemToList() {
+          this.todos.push({ text: this.item });
+        },
       },
     });
   </script>
