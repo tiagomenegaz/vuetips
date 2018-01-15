@@ -9,6 +9,12 @@
     <button v-on:click="changeVisibility">Toggle Text</button>
     <p v-if="visibleText">{{ message }}</p>
     <input v-model="message">
+    <br>
+    <ol>
+      <li v-for="todo in todos">
+        {{ todo.text }}
+      </li>
+    </ol>
   </div>
 
   <script>
