@@ -15,6 +15,7 @@
         {{ todo.text }}
       </li>
     </ol>
+    <input v-model="item">
   </div>
 
   <script>
@@ -23,6 +24,7 @@
       data: {
         message: 'Hello World!',
         visibleText: true,
+        item: '',
         todos: [
           { text: 'One' },
           { text: 'Bit' },
